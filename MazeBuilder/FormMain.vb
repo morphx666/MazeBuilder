@@ -385,7 +385,7 @@ Public Class FormMain
             Dim p As New Point(15, 15)
             g.DrawString("Click anywhere to start a new 'maze building' thread", Me.Font, Brushes.Black, p)
             p.Y += s.Height * 2
-            g.DrawString($"PageUp/PageDown (or mouse scrollwheel) changes delay ({delay}ms)", Me.Font, Brushes.Black, p)
+            g.DrawString($"PageUp/PageDown (or mouse scroll=wheel) changes delay ({delay}ms)", Me.Font, Brushes.Black, p)
             p.Y += s.Height
             g.DrawString($"Up/Down changes dot size ({mDotSize})", Me.Font, Brushes.Black, p)
             p.Y += s.Height
@@ -407,7 +407,7 @@ Public Class FormMain
             p.Y += s.Height
             g.DrawString(String.Format("Active Threads: {0}", threadsCount), Me.Font, Brushes.Black, p)
             p.Y += s.Height
-            g.DrawString(String.Format("Eleapsed: {0:00}:{1:00}:{2:00}:{3:000}", sw.Elapsed.Hours, sw.Elapsed.Minutes, sw.Elapsed.Seconds, sw.Elapsed.Milliseconds), Me.Font, Brushes.Black, p)
+            g.DrawString(String.Format("Elapsed: {0:00}:{1:00}:{2:00}:{3:000}", sw.Elapsed.Hours, sw.Elapsed.Minutes, sw.Elapsed.Seconds, sw.Elapsed.Milliseconds), Me.Font, Brushes.Black, p)
         End If
     End Sub
 End Class
